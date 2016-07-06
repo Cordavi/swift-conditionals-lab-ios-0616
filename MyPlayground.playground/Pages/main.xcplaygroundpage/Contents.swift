@@ -48,7 +48,7 @@ print(y * b <= a)
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
-print(!(a <= b))
+print(!(a >= b))
 
 
 
@@ -65,7 +65,7 @@ if a % b == 0 {
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
-if a / b < Int(x) {
+if Double(a / b) > x {
     print("True")
 } else {
     print("False")
@@ -76,7 +76,7 @@ if a / b < Int(x) {
 /*: Question 7
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
-if y / Int(x) > 3 {
+if Double(y) / x > Double(3) {
     print("True")
 } else {
     print("False")
@@ -88,7 +88,7 @@ if y / Int(x) > 3 {
 /*: Question 8
 ### 8. Print "true" if y is greater than x and a divided by b is greater than 9
 */
-if y > Int(x) && a / b > 9 {
+if Double(y) > x && a / b > 9 {
     print("True")
 } else {
     print("False")
